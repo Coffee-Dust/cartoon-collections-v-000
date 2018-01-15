@@ -23,10 +23,10 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find do |item| 
-    
-    cheese_types.each{ |cheese| return true if item == cheese }
-    
+  array.find do |item|
+
+    cheese_types.each{ |cheese| break if item == cheese }
+
   end
-  
+
 end
